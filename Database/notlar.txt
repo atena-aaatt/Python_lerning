@@ -1,0 +1,18 @@
+Alan Adları (fields): Sütun başlıkları
+Veri Tipleri: 
+   INT  > Tamsayı
+   FLOAT> Ondalık
+   TEXT > Metinsel
+   BOOL > True-False
+   DATE > tarih-saat
+   BLOB > fotoğraf-video gibi büyük değerleri saklar
+
+Database (Veritabanı) Oluşturma:
+    with sqlite3.connect("./database.db") as baglanti:
+
+Tablo Oluşturma:
+    create table bilgiler (no INT, adi TEXT, soyadi TEXT,
+                            tel TEXT, adres TEXT) 
+
+NOT: tablo içinde bir kaydı değiştirdiğinizde baglantiyi onaylamanız gerekir.
+     baglanti.commit()  > onayladık.
