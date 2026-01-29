@@ -1,0 +1,1 @@
+python -m PyQt6.uic.pyuic -x kamera.ui -o kamera.py
