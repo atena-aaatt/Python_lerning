@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_Anasayfa</class>
+ <widget class="QMainWindow" name="Form_Anasayfa">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Anasayfa</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_fotoekle">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Fotoğraf Eklemek&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;İçin &lt;/span&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;Tıklayınız.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_fotoekle">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>50</y>
+      <width>111</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fotoğraf
+Ekle</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>200</y>
+      <width>401</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Oturum Aç</string>
+     </attribute>
+     <widget class="QLineEdit" name="txt_kullaniciadi">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding-left:10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Kullanıcı Adı</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_parola">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding-left:10px;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Parola</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_rol">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>-- Rol Seçin --</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kullanıcı</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Yönetici</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ziyaretçi</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="btn_oturumac">
+      <property name="geometry">
+       <rect>
+        <x>261</x>
+        <y>130</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Oturum Aç</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_goster">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>50</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>🔰</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Kullanıcı Kayıt</string>
+     </attribute>
+     <widget class="QPushButton" name="btn_kayit_goster">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>90</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>🔰</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_kayit_rol">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>-- Rol Seçin --</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kullanıcı</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Yönetici</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ziyaretçi</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="btn_kullanici_kayit">
+      <property name="geometry">
+       <rect>
+        <x>261</x>
+        <y>170</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kullanıcı Kayıt</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_kayit_kullaniciadi">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding-left:10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Kullanıcı Adı</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_kayit_parola">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding-left:10px;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Parola</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_kayit_eposta">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding-left:10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>E-Posta Adresi</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>341</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#ddfeff;
+font-size:14pt;
+color:red;
+font-weight:bold;</string>
+    </property>
+    <property name="title">
+     <string>Kişisel Bilgiler</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PID:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_guncelle_kullaniciadi">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color:black;
+font-size:10pt;
+padding-left:10px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Kullanıcı Adı</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_guncelle_parola">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color:black;
+font-size:10pt;
+padding-left:10px;</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Parola</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_guncelle_eposta">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color:black;
+font-size:10pt;
+padding-left:10px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>E-Posta Adresi</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_guncelle_PID">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>67</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color:black;
+font-size:10pt;
+padding-left:10px;</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Personel ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_guncelle_rol">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color:black;
+font-size:10pt;
+padding-left:10px;</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Kullanıcı Rolü</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_guncelle">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>280</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Güncelle</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_eposta">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>280</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>E-Posta</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>872</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Dosya">
+    <property name="title">
+     <string>&amp;Dosya</string>
+    </property>
+    <addaction name="mn_ekle"/>
+    <addaction name="mn_yeni"/>
+    <addaction name="separator"/>
+    <addaction name="mn_kapat"/>
+   </widget>
+   <widget class="QMenu" name="menu_Hakk_nda">
+    <property name="title">
+     <string>&amp;Hakkında</string>
+    </property>
+    <addaction name="mn_yardim"/>
+    <addaction name="actionSiteye_Git"/>
+   </widget>
+   <addaction name="menu_Dosya"/>
+   <addaction name="menu_Hakk_nda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="mn_ekle">
+   <property name="text">
+    <string>Ekle</string>
+   </property>
+  </action>
+  <action name="mn_yeni">
+   <property name="text">
+    <string>Yeni</string>
+   </property>
+  </action>
+  <action name="mn_kapat">
+   <property name="text">
+    <string>Kapat</string>
+   </property>
+  </action>
+  <action name="mn_yardim">
+   <property name="text">
+    <string>Yardım</string>
+   </property>
+  </action>
+  <action name="actionSiteye_Git">
+   <property name="text">
+    <string>Siteye Git</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

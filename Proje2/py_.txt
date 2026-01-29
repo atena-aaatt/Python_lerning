@@ -1,0 +1,1 @@
+python -m PyQt6.uic.pyuic -x foto.ui -o foto.py
